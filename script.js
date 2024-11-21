@@ -32,11 +32,10 @@ function funcWatchMdp(mdp){
 
 // FONCTION POUR AFFICHER LA TAILLE DU MDP 
 function funcWatchLength(){
-   return textNb.textContent= textLength.value;  
+   return textNb.textContent= textLength.value + " caractères";  
 }
 // EVENEMENT POUR QUE LA VALEUR DE TYPE RANGE CHANGE A CHAQUE FOIS 
 textLength.addEventListener("input",funcWatchLength)
-
 
 
 // FONCTION POUR CREER UN MDP ALEATOIRE AVEC MINUSCULE ET MAJUSCULE 
@@ -124,7 +123,7 @@ function funcMinMajNbSpec(taille) {
 }
 
 // QUAND ON ARRIVE UNE PREMIERE FOIS SUR LA PAGE ET QUE L'ON A PAS TOUCHER AU INPUT RANGE 
-textNb.textContent=12
+textNb.textContent="12 caractères"
 // EVENEMENT AU CLIQUE POUR GENERER LE MOT DE PASSE 
 btnGenerate.addEventListener("click", (e) =>{
     e.preventDefault();
