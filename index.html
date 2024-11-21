@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MDP </title>
+</head>
+<body>
+    <main>
+        <div class="all-mdp">
+            <!-- TITLE PAGES  -->
+            <h1> Générateur de mot de passe </h1>
+           
+            <!-- MDP -->
+            <div class="mdp">
+                <input type="text" id="text-mdp" class="text-mdp" readonly>
+                <button id="btn-copy" class="btn-copy">Copier</button>
+                <button id="btn-generate" class="btn-generate">Générer</button>
+            </div>
+
+            <!-- POUR LA LONGUEUR DU MDP -->
+            <div class="mdp-length">
+                <p class="btn-name"> Taille </p>
+                <input type="range" id="text-length" min="12" max="40" class="text-length" value="12" >
+                <p class="nb"></p>
+            </div>
+
+            <!-- CONDITION MDP  -->
+            <div class="mdp-condition">
+                <div class="container-chiffre">
+                    <p>Chiffre</p>
+                <input type="checkbox" name="chiffre" id="chiffre" class="chiffre">
+                </div>
+                
+                <!-- <div class="container-majuscule">
+                    <p>Majuscules (ABC)</p>
+                    <input type="checkbox" name="text-majuscule" id="text-majuscule" class="text-majuscule">
+                </div> -->
+                
+                <!-- <div class="container-minuscule">
+                    <p>Minuscule (abc)</p>
+                <input type="checkbox" name="text-minuscule" id="text-minuscule" class="text-minuscule">
+                </div>
+                 -->
+                <div class="container-speciaux">
+                    <p>Caractère spéciaux </p>
+                <input type="checkbox" name="text-speciaux" id="text-speciaux" class="text-speciaux">
+                </div>
+            </div>
+    
+    
+    
+        </div>
+    </main>
+  
+    <script src="script.js"></script>
+</body>
+</html>
