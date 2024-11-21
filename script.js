@@ -13,7 +13,16 @@ let textSpeciaux = document.getElementById("text-speciaux");
 let textMin = "abcdefghijklmnopqrstuvwxyz";
 let textMaj = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
+// FONCTION POUR GENERER UN MDP DES QUoN ARRIVE SUR LA PAGE
+function funcDefaultMdp(){
+    let taille = 12;
+    return funcMinMaj(taille )
+}
 
+// LORSQUE LA PAGE SE CHARGE MDP
+window.addEventListener("DOMContentLoaded", () =>{
+    funcDefaultMdp()
+})
 
 // FONCTION POUR AFFICHER LE MOT DE PASSE DANS LE CHAMP 
 function funcWatchMdp(mdp){
