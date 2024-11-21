@@ -13,6 +13,8 @@ let textSpeciaux = document.getElementById("text-speciaux");
 let textMin = "abcdefghijklmnopqrstuvwxyz";
 let textMaj = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
+
+
 // FONCTION POUR AFFICHER LE MOT DE PASSE DANS LE CHAMP 
 function funcWatchMdp(mdp){
     // récupére l'element
@@ -136,4 +138,22 @@ btnGenerate.addEventListener("click", (e) =>{
         }
     }
 
+})
+// Pour copier le texte 
+btnCopy.addEventListener("click", ()=>{
+
+    let valueMdp = textMdp.value; 
+
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(valueMdp)
+                    .then(() => {
+                        alert('Texte copié avec succès !');
+                    })
+                    .catch(err => {
+                        console.error('Erreur lors de la copie :', err);
+                        alert('Erreur lors de la copie du texte.');
+                    });
+            } else {
+                alert('La copie dans le presse-papier n\'est pas supportée par votre navigateur.');
+            }
 })

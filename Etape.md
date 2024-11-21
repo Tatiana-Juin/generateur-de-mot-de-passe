@@ -55,6 +55,7 @@ textChiffre.addEventListener("click", () =>{
 - creer une constante pour chaque type . Dans cette constante on fait un random 
 - A la fin on créer un trableau qu'on trie avec sort de manière aleatoire et on assemble les caractere avec join 
 
+
 # ETAPE FAITE 
 - récupérer les éléments du DOM 
 - créaion d'une fonction pour afficher le mdp dans l'input 
@@ -64,3 +65,5 @@ textChiffre.addEventListener("click", () =>{
 - Fonction pour créer un mdp avec min , maj et nb 
 - fonction pour créer un mdp min , maj, speciaux 
 - fonction pour créer un mdp avec min , maj, nb et speciaux 
+- condition créer dans l'événement au clique afin d'appeller la fonction par rapport a si c'est cocher ou non 
+- 
