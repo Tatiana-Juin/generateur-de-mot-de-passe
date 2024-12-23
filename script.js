@@ -43,30 +43,33 @@ textLength.addEventListener("input",funcWatchLength)
 // FONCTION POUR CREER UN MDP ALEATOIRE AVEC MINUSCULE ET MAJUSCULE 
 function funcMinMaj(taille){
     let mdp ="";
+    // Pour qu'il est des caractère minuscule et majuscule 
     mdp += textMin[Math.floor(Math.random() * textMin.length)]
     mdp += textMaj[Math.floor(Math.random() * textMaj.length)]
     let mdpMinMaj = textMin + textMaj; 
     // console.log(mdpMinMaj)
-    
+    // boucle pour afficher les caractère aleatoire par rapport a la taille du mot de passe demander dans le range 
     for( let i = 0; i<taille; i++){
         let rand = Math.floor(Math.random() * mdpMinMaj.length)
         mdp+= mdpMinMaj[rand]
     }
-   mdp = mdp.split('').sort(() => Math.random()-0.5 ).join("")
+    mdp = mdp.split('').sort(() => Math.random()-0.5 ).join("")
     return funcWatchMdp(mdp)
      
 }
 
 // FONCTION POUR CREER UN MDP AVEC MINSUCULE , MAJUSCULE , NB 
 function funcMinMajNb(taille){
+    // Chiffre
     const textNb = "0123456789";
     let mdp ="";
-
+    // Pour avoir un caractère majuscule, minuscule et nb au minimum
     mdp+=textMin[Math.floor(Math.random() * textMin.length)]
     mdp += textMaj[Math.floor(Math.random() * textMaj.length)]
     mdp+= textNb[Math.floor(Math.random() * textNb.length)]
     let mdpMinMajNb = textMin + textMaj + textNb
-   
+
+//    Boucle pour afficher les caractèrepar rapport au nb de caractère 
     for( let i = 0; i<taille; i++){
         let rand = Math.floor(Math.random() * mdpMinMajNb.length)
         mdp+= mdpMinMajNb[rand]

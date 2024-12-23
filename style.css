@@ -47,11 +47,11 @@ main{
 #btn-copy,#btn-generate{
   padding: 6px;
   margin-right: 6px;
-  width: 90px;
-  background-color: #C0E3FF;
-  border-color: #C0E3FF;
-  outline: none;
-  box-shadow: none;
+  /* width: 90px; */
+
+  /* background-color: #C0E3FF; */
+  /* border-color: #C0E3FF; */
+  
   cursor:pointer;  
 }
 
