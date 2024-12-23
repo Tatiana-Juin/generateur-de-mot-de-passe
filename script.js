@@ -32,7 +32,9 @@ function funcWatchMdp(mdp){
 
 // FONCTION POUR AFFICHER LA TAILLE DU MDP 
 function funcWatchLength(){
-   return textNb.textContent= textLength.value + " caractères";  
+//    return textNb.textContent= textLength.value + " caractères"; 
+    textNb.textContent = textLength.value + " caractères";
+    return parseInt(textLength.value);
 }
 // EVENEMENT POUR QUE LA VALEUR DE TYPE RANGE CHANGE A CHAQUE FOIS 
 textLength.addEventListener("input",funcWatchLength)
