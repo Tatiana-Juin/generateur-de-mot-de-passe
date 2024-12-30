@@ -51,24 +51,34 @@
   /*STYLE DE LA LONGUEUR DU MDP */
   .mdp-length{
     display: flex;
+    align-items: center;
     margin-bottom: 15px;
   }
 
   /* PARAGRAPHE TAILLE */
   .btn-name{
     margin-right:10px;
+    margin-left: 10px;
   }
+  /* DIV POUR LES CONDITIONS SUR LE MDP  */
+  .mdp-condition{
+    display: flex;
+    align-items:center;
+    margin-bottom: 10px;;
+  }
+
+  /* STYLE DU CONTAINER CONTENANT LES CHIFFRES ET CARACTERE SPECIAUX   */
+   .container-chiffre,.container-speciaux{
+    display:flex;
+    align-items: center;
+    margin-bottom:10px;
+    
+  } 
 
   /*STYLE POUR LE NB DE CARACTERE ET POUR LES CASE A COCHER  */
   .nb,.chiffre,.text-speciaux{
     margin-left:10px;
-  }
-
-  /* STYLE DU CONTAINER CONTENANT LES CHIFFRES ET CARACTERE SPECIAUX   */
-  .container-chiffre,.container-speciaux{
-    display:flex;
-    margin-bottom:10px;
-    /* border:1px solid blue; */
+    margin-right:5px;
   }
 
   /**************** TABLETTE ************* */
@@ -103,11 +113,13 @@
       margin-right: 8px;
     }
 
-    .mdp-length{
+    /* STYLE POUR LA TAILLE DU TEXTE  */
+    .mdp-length,.mdp-condition{
       /* border:1px solid black; */
-      width:76vw;
+      width:79vw;
       margin: auto;
       padding-bottom: 20px;
+
     }
     
   }
