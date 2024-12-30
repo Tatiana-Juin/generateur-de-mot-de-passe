@@ -11,11 +11,8 @@
   main{
     width: 100vw;
     display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-
-    /* border:1px solid red; */
   }
+
   /* DIV PRINCIPALE  */
   .all-mdp{
     /* border:1px solid purple; */
@@ -86,13 +83,31 @@
 
     /* POUR DIV CONTENANT TOUS CE QUI CONSER */
     .all-mdp{
-      /* border:1px solid blue; */
+      border:1px solid blue;
       width:85vw;
     }
 
+    /* POUR LA DIV CONTENANT LE CHAMPS DE TEXTE, BOUTON COPIER,ET LE BOUTON RESET  */
     .mdp{
       display: flex;
       justify-content: center;
+    }
+
+    /* BOUTON COPY */
+    #btn-copy{
+      margin-left:8px;
+    }
+
+    /* BOUTON COPY ET BOUTON GENERATE  */
+    #btn-copy,#btn-generate{
+      margin-right: 8px;
+    }
+
+    .mdp-length{
+      /* border:1px solid black; */
+      width:76vw;
+      margin: auto;
+      padding-bottom: 20px;
     }
     
   }
