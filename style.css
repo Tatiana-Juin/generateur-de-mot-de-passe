@@ -11,12 +11,12 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border:1px solid red; */
+  border:1px solid red;
 }
 
 /* DIV POUR TOUS LES ELEMENTS DU MDP */
 .all-mdp{
-  /* border:1px solid red; */
+  border:1px solid purple;
   width:55vw;
 }
 

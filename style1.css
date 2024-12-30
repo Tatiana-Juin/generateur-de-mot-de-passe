@@ -1,0 +1,105 @@
+/* *********MOBILE FIRST ******** */
+
+/* RESET */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* MAIN  */
+  main{
+    width: 100vw;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+
+    /* border:1px solid red; */
+  }
+  /* DIV PRINCIPALE  */
+  .all-mdp{
+    /* border:1px solid purple; */
+    width:90vw;
+    margin:auto;
+  }
+
+  /* H1 DE LA PAGE */
+  .all-mdp h1{
+    text-align: center;
+    color:#04599C;
+    font-size:25px;
+    margin-bottom:20px;
+    margin-top:15px;
+  }
+
+  /* STYLE DE L'INPUT DU MDP */
+  #text-mdp{
+    width:65vw;
+    height:25px;
+    margin-bottom: 20px;
+    background-color: #F5F5F5;
+    border:none;
+    border-bottom:1px solid #04599C;
+    outline: none;
+    padding-left:15px;
+  }
+
+  /* STYLE BOUTON COPY ET GENERATE  */
+  #btn-copy,#btn-generate{
+    padding: 6px;
+    margin-right: 6px;
+    cursor:pointer;
+  }
+
+  /*STYLE DE LA LONGUEUR DU MDP */
+  .mdp-length{
+    display: flex;
+    margin-bottom: 15px;
+  }
+
+  /* PARAGRAPHE TAILLE */
+  .btn-name{
+    margin-right:10px;
+  }
+
+  /*STYLE POUR LE NB DE CARACTERE ET POUR LES CASE A COCHER  */
+  .nb,.chiffre,.text-speciaux{
+    margin-left:10px;
+  }
+
+  /* STYLE DU CONTAINER CONTENANT LES CHIFFRES ET CARACTERE SPECIAUX   */
+  .container-chiffre,.container-speciaux{
+    display:flex;
+    margin-bottom:10px;
+    /* border:1px solid blue; */
+  }
+
+  /**************** TABLETTE ************* */
+
+  @media screen and (min-width:768px) and (max-width:1024px){
+    /* MAIN */
+    main{
+      justify-content:center;
+      align-items:center;
+      /* border:1px solid red; */
+    }
+
+    /* POUR DIV CONTENANT TOUS CE QUI CONSER */
+    .all-mdp{
+      /* border:1px solid blue; */
+      width:85vw;
+    }
+
+    .mdp{
+      display: flex;
+      justify-content: center;
+    }
+    
+  }
+
+
+ 
+
+  
+
+  
