@@ -11,6 +11,7 @@
   main{
     width: 100vw;
     display: flex;
+    flex-direction: column;
   }
 
   /* DIV PRINCIPALE  */
@@ -21,7 +22,7 @@
   }
 
   /* H1 DE LA PAGE */
-  .all-mdp h1{
+   h1{
     text-align: center;
     color:#04599C;
     font-size:25px;
@@ -91,7 +92,7 @@
       /* border:1px solid red; */
     }
 
-    /* POUR DIV CONTENANT TOUS CE QUI CONSER */
+    /* POUR DIV CONTENANT TOUS CE QUI CONSERNE LE MDP  */
     .all-mdp{
       border:1px solid blue;
       width:85vw;
@@ -124,6 +125,32 @@
     
   }
 
+  /* ************** TABLETTE PAYSAGE  ***************** */
+  @media screen and (min-width:1025px) and (max-width:1200px){
+    
+    /*DIV QUI ENGLOBE TOUT CE QUI CONSERRNE LE MDP  */
+    .all-mdp{
+      /* border:1px solid red; */
+      width:75vw;
+    }
+
+    /* STYLE DE INPUT DU MDP */
+    #text-mdp{
+      width:60vw;
+    }
+
+    .mdp{
+      display: flex;
+      justify-content: center;
+    }
+
+    .mdp-length,.mdp-condition{
+      width:69vw;
+      margin:auto;
+      padding-bottom: 20px;
+      /* border:1px solid green; */
+    }
+  }
 
  
 
