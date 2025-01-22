@@ -160,7 +160,7 @@ btnCopy.addEventListener("click", ()=>{
             if (navigator.clipboard && navigator.clipboard.writeText) {
                 navigator.clipboard.writeText(valueMdp)
                     .then(() => {
-                        alert('Texte copié avec succès !');
+                        alert('Mot de passe copier !');
                     })
                     .catch(err => {
                         console.error('Erreur lors de la copie :', err);
