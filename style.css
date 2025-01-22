@@ -58,6 +58,7 @@
 
   /* PARAGRAPHE TAILLE */
   .btn-name{
+
     margin-right:10px;
     margin-left: 10px;
   }
@@ -91,9 +92,17 @@
       align-items:center;
     }
 
+    h1{
+      font-size:28px;
+    }
+
+    .btn-name,.nb,.container-chiffre p,.container-speciaux p{
+      font-size:17px;
+    }
+
     /* POUR DIV CONTENANT TOUS CE QUI CONSERNE LE MDP  */
     .all-mdp{
-      border:1px solid blue;
+      
       width:85vw;
     }
 
@@ -131,6 +140,10 @@
       width:75vw;
     }
 
+    h1{
+      font-size:28px;
+    }
+
     /* STYLE DE INPUT DU MDP */
     #text-mdp{
       width:60vw;
@@ -152,6 +165,10 @@
   @media screen and (min-width:1367px ) and (max-width:1920px){
     .all-mdp{
       width:60vw;
+    }
+
+    h1{
+      font-size:30px;
     }
 
     /* STYLE DE INPUT DU MDP */
