@@ -5,9 +5,8 @@ let btnGenerate = document.getElementById("btn-generate");
 let textLength = document.getElementById("text-length");
 let textNb = document.querySelector(".nb");
 let textChiffre = document.getElementById("chiffre");
-// let textMajuscule = document.getElementById("text-majuscule");
-// let textMinuscule = document.getElementById("text-minuscule");
 let textSpeciaux = document.getElementById("text-speciaux");
+let textCopy = document.querySelector(".text-copy");
 
 // CONSTANTE POUR MINUSCULE ET MAJUSCULE PRESENT DANS TOUS LES MDP OBLIGATOIREMENT 
 let textMin = "abcdefghijklmnopqrstuvwxyz";
@@ -32,10 +31,10 @@ function funcWatchMdp(mdp){
 
 // FONCTION POUR AFFICHER LA TAILLE DU MDP 
 function funcWatchLength(){
-//    return textNb.textContent= textLength.value + " caractères"; 
     textNb.textContent = textLength.value + " caractères";
     return parseInt(textLength.value);
 }
+
 // EVENEMENT POUR QUE LA VALEUR DE TYPE RANGE CHANGE A CHAQUE FOIS 
 textLength.addEventListener("input",funcWatchLength)
 
@@ -47,7 +46,8 @@ function funcMinMaj(taille){
     mdp += textMin[Math.floor(Math.random() * textMin.length)]
     mdp += textMaj[Math.floor(Math.random() * textMaj.length)]
     let mdpMinMaj = textMin + textMaj; 
-    // console.log(mdpMinMaj)
+   
+
     // boucle pour afficher les caractère aleatoire par rapport a la taille du mot de passe demander dans le range 
     for( let i = 0; i<taille; i++){
         let rand = Math.floor(Math.random() * mdpMinMaj.length)
@@ -132,6 +132,8 @@ textNb.textContent="12 caractères"
 // EVENEMENT AU CLIQUE POUR GENERER LE MOT DE PASSE 
 btnGenerate.addEventListener("click", (e) =>{
     e.preventDefault();
+    // Pour que le texte disparait quand on genere un nouveau mot de passe 
+    textCopy.innerText="";
     // recupere la taille du mdp par rapport au range 
     let taille  = funcWatchLength()
     
@@ -160,7 +162,8 @@ btnCopy.addEventListener("click", ()=>{
             if (navigator.clipboard && navigator.clipboard.writeText) {
                 navigator.clipboard.writeText(valueMdp)
                     .then(() => {
-                        alert('Mot de passe copier !');
+                        // alert('Mot de passe copier !');
+                        textCopy.innerText="Mot de passe copier";
                     })
                     .catch(err => {
                         console.error('Erreur lors de la copie :', err);

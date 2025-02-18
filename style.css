@@ -30,6 +30,15 @@
     margin-top:15px;
   }
 
+  /* STYLE POUR LE TEXT AFFICHER QUAND C'EST COPIER  */
+  .text-copy{
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bolder;
+    color: green;
+    font-size: 23px;
+  }
+
   /* STYLE DE L'INPUT DU MDP */
   #text-mdp{
     width:65vw;
